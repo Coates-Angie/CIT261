@@ -1,0 +1,63 @@
+/*This is the div section in the body*/
+
+h2 {
+    color: green;
+}
+
+p {
+    color: red;
+    font-size: 14px;
+}
+
+#cbackground {
+    position: relative;
+    border: 1px solid black;
+}
+
+#christmasTree {
+    position: absolute;
+    bottom: 80px;
+    left: 220px;
+    height: 200px;
+}
+
+
+/*The star be used here to show transform and transition*/
+
+#cStar {
+    position: absolute;
+    bottom: 240px;
+    left: 270px;
+    transition: transform 1s linear;
+}
+
+#cStar:hover {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+}
+
+
+/*Santa will be used to show how to animate without custom libraries*/
+
+#santa {
+    position: absolute;
+    bottom: 85px;
+    right: 175px;
+    height: 200px;
+    animation: fly 2s linear 3s forwards;
+}
+
+@keyframes fly {
+    0% {
+        bottom: 85px;
+        right: 175px;
+    }
+    50% {
+        bottom: 250px;
+        right: 50px;
+    }
+    100% {
+        bottom: 400px;
+        right: -400px;
+    }
+}
