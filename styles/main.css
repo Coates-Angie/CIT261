@@ -1,10 +1,15 @@
 ﻿/* CIT 261 - fluencyt Portal CSS Template */
+
+
 /* * is a wildcard referring to all elements. */
+
 @import url('https://fonts.googleapis.com/css?family=Lato|Lora');
 * {
     margin: 0;
 }
-html, body {
+
+html,
+body {
     height: 100%;
 }
 
@@ -12,13 +17,41 @@ body {
     font-size: 18px;
     line-height: 32px;
     font-family: Lato;
-    color:dimgray;
+    color: dimgray;
+}
 
+
+/* unvisited link */
+
+a:link {
+    color: chocolate;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: blueviolet;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: #FF00FF;
+}
+
+
+/* selected link */
+
+a:active {
+    color: chocolate;
 }
 
 img {
     border-radius: 8px;
 }
+
 h1 {
     font-size: 2rem;
     color: #fff;
@@ -27,28 +60,29 @@ h1 {
 h2 {
     font-size: 1.5rem;
     text-align: left;
-    color:chocolate;
-    padding:1em;
+    color: chocolate;
+    padding: 1em;
     font-family: Lora;
 }
+
 ul li a {
-   color:chocolate;
+    color: chocolate;
 }
 
-
-header, footer {
+header,
+footer {
     margin: 2rem auto;
     padding: .3rem;
     max-width: 1300px;
-
 }
 
-header, footer  {
+header,
+footer {
     text-align: center;
-    background-color:dimgray;
-    color:#fff;
-
+    background-color: dimgray;
+    color: #fff;
 }
+
 main {
     margin: 2rem auto;
     min-height: calc(100vh - 70px);
@@ -61,9 +95,7 @@ header img {
     margin-top: 1em;
 }
 
-
 footer {
-
     font-size: 1rem;
     text-align: left;
     padding: 1em, 1em;
