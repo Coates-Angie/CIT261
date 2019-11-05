@@ -5,65 +5,65 @@ h2 {
 }
 
 p {
-    color: red;
+    color: rgb(207, 29, 29);
     font-size: 14px;
 }
 
 .christmasScene {
     position: relative;
     border: 1px solid black;
-    height: 800px;
-    width: 1200px;
+    height: 600px;
+    width: 900px;
 }
 
 #winterBackground {
-    height: 800px;
-    width: 1200px;
+    height: 600px;
+    width: 900px;
     position: absolute;
 }
 
 #christmasTree {
     position: absolute;
-    bottom: 150px;
-    left: 375px;
+    bottom: 10px;
+    left: 250px;
 }
 
 
 /*The star be used here to show transform and transition*/
 
 #cStar {
-    transition: transform 1s linear;
+    transition: transform .5s linear;
     position: absolute;
-    top: 320px;
-    left: 475px;
+    top: 260px;
+    left: 350px;
 }
 
 #cStar:hover {
-    transform: rotateY(360deg);
-    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg) scaleY(2);
+    -webkit-transform: rotateY(360deg) scaleY(2);
 }
 
 
 /*Santa will be used to show how to animate without custom libraries*/
 
 #santa {
-    animation: fly 2s ease-out 3s forwards;
+    animation: fly 8s linear 1s forwards;
     position: absolute;
-    bottom: 175px;
-    right: 175px;
+    bottom: 200px;
+    left: -600px;
 }
 
 @keyframes fly {
     0% {
-        bottom: 175px;
-        right: 175px;
+        bottom: 200px;
+        left: -600px;
     }
     50% {
         bottom: 400px;
-        right: 50px;
+        left: 400px;
     }
     100% {
-        bottom: 600px;
-        right: -600px;
+        bottom: 700px;
+        left: 3000px;
     }
 }
