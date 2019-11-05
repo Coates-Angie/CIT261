@@ -8,12 +8,8 @@
     margin: 0;
 }
 
-html,
 body {
     height: 100%;
-}
-
-body {
     font-size: 18px;
     line-height: 32px;
     font-family: Lato;
@@ -48,10 +44,6 @@ a:active {
     color: chocolate;
 }
 
-img {
-    border-radius: 8px;
-}
-
 h1 {
     font-size: 2rem;
     color: #fff;
@@ -74,10 +66,6 @@ footer {
     margin: 2rem auto;
     padding: .3rem;
     max-width: 1300px;
-}
-
-header,
-footer {
     text-align: center;
     background-color: dimgray;
     color: #fff;
@@ -93,6 +81,7 @@ header img {
     width: 200px;
     float: right;
     margin-top: 1em;
+    border-radius: 8px;
 }
 
 footer {
