@@ -1,5 +1,15 @@
 /*This is the div section in the body*/
 
+html {
+    margin: 10px
+}
+
+body {
+    margin: 2rem auto;
+    min-height: calc(100vh - 70px);
+    max-width: 1300px;
+}
+
 h2 {
     color: green;
 }
