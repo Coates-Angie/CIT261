@@ -57,7 +57,7 @@ p {
 /*Santa will be used to show how to animate without custom libraries*/
 
 #santa {
-    animation: fly 8s linear 1s forwards;
+    animation: fly 8s linear 1s 3 forwards;
     position: absolute;
     bottom: 200px;
     left: -600px;
