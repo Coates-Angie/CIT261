@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Fluency portal page for Angie Coates in CIT 261 - Web Application Development at Brigham Young University - Idaho">
+    <title>Html5 video, audio, and canvas tags</title>
+    <link rel="stylesheet" href="styles/htmlTags.css">
+    <script src= "scripts/htmlTags.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>CIT 261 Code Fluency for Angie Coates</h1>
+    </header>
+    <main>
+        <h2>Html 5 Tags: Audio, Video, and Canvas</h2>
+        <section class="audioContainer">
+            <div class="myAudio">
+                <h3>Audio:</h3>
+                <audio id="hot" controls>
+                    <source src="media/01-10- Hot Hot Hot.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </section>
+        <section class="videoContainer">
+            <div class="myVideo">
+                <h3>Video Players:</h3>
+                <p> This video is entered into the page using the video tag!</p>
+                <video id="floridaVideo" controls>
+                    <source id ="florida_mp4" src="media/cruiseFlorida.mp4" type="video/mp4">
+                     Your browser does not support mp4 videos.
+                    </video>
+                <p><strong>Note:</strong> The video tag is not supported in Internet Explorer 8 and earlier versions.</p>
+                <div class="youtubeVideo">
+                    <p>This video is an embedded YouTube Video:</p>
+                    <iframe src="https://www.youtube.com/embed/6nJ0PZt05H4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="canvasContainer">
+            <div class="myCanvas">
+                <h3>Canvas:</h3>
+                <button onclick = "circle()">Circle</button>
+                <button onclick = "drawTriangle()">Triangle</button>
+                <button onclick = "draw(0,0)">Draw</button>
+                <canvas id="canvas">
+                    Your browser does not support the canvas tag.
+                </canvas>
+            </div>
+
+        </section>
+    </main>
+</body>
+<footer>
+    <p>&#169; 2019- Angie Coates- Utah - <a href="http://www.byui.edu/online">BYU-Idaho</a></p>
+</footer>
+
+</html>
