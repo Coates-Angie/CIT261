@@ -1,0 +1,121 @@
+ html {
+     background-color: #ccdeec;
+     background-size: cover;
+ }
+
+ body {
+     height: 100%;
+     font-size: 18px;
+     line-height: 32px;
+     font-family: Lato;
+     background-color: white;
+     margin: 3rem auto;
+     padding-left: 20px;
+     max-width: 70%;
+     min-height: calc(100vh - 70px);
+ }
+
+ header {
+     margin-left: -20px;
+     padding: .5rem;
+     text-align: left;
+     background-color: #6B7A8F;
+     color: white;
+     height: 40px;
+ }
+
+ h1 {
+     font-size: 18px;
+     padding-left: 15px;
+     ;
+ }
+
+ h2 {
+     color: black;
+ }
+
+ h3 {
+     color: black;
+ }
+
+ p {
+     color: black;
+ }
+
+ main {
+     margin-top: 30px;
+     padding-right: 20px;
+ }
+ /*Vidio Player*/
+
+ .videoContainer {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     height: 100vh;
+ }
+
+ #floridaVideo {
+     width: 100%;
+     max-width: 600px;
+ }
+
+ iframe {
+     width: 100%;
+     max-width: 600px;
+     height: 330px;
+ }
+
+ .myVideo,
+ .myAudio,
+ .myCanvas {
+     width: 100%;
+     max-width: 600px;
+ }
+ /*Audio section*/
+
+ .audioContainer {
+     display: flex;
+     align-items: flex-start;
+ }
+
+ #hot {
+     background-color: #6B7A8F;
+     padding: 10px;
+ }
+ /*Canvas Section*/
+
+ .canvasContainer {
+     display: flex;
+     align-items: flex-start;
+
+ }
+
+ #canvas {
+     width: 100%;
+     max-width: 600px;
+     border: 1px solid;
+ }
+button{
+    padding:10px;
+    margin:10px;
+    background-color:#F7882F;
+    color:white;
+
+}
+
+ /*Footer*/
+
+ footer {
+     font-size: 1rem;
+     text-align: left;
+     height: 40px;
+     background-color: #6B7A8F;
+     color: white;
+     margin-left: -20px;
+     padding: 0px 0px 10px 15px;
+ }
+
+ footer a {
+     color: deepskyblue;
+ }

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Lora');
+html {
+    background-color: #ccdeec;
+    background-size: cover;
+}
+
+body {
+    height: 100%;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: Lato;
+    background-color: white;
+    margin: 3rem auto;
+    max-width: 900px;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #6B7A8F;
+    color: white;
+    font-size: 1rem;
+}
+
+h1 {
+    padding: 20px;
+}
+
+h2 {
+    color: #F7882F;
+}
+
+h3 {
+    color: #6B7A8F;
+}
+
+h4 {
+    color: #6B7A8F
+}
+
+p {
+    color: black;
+}
+
+main {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px;
+    padding-left: 20px;
+}
+
+#computeBtn {
+    padding: 10px;
+    background-color: #F7882F;
+    color: white;
+    font-size: 18px;
+}
+
+#response,
+#bmiOutput {
+    color: #F7882F;
+}
+
+
+/*Footer*/
+
+footer {
+    font-size: 1rem;
+    text-align: center;
+    background-color: #6B7A8F;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: deepskyblue;
+}

@@ -4,8 +4,9 @@
 /* * is a wildcard referring to all elements. */
 
 @import url('https://fonts.googleapis.com/css?family=Lato|Lora');
-* {
-    margin: 0;
+html {
+    background-color: #DEE2Ec;
+    background-size: cover;
 }
 
 body {
@@ -13,82 +14,104 @@ body {
     font-size: 18px;
     line-height: 32px;
     font-family: Lato;
-    color: dimgray;
+    background-color: white;
+    margin: 3rem auto;
+    max-width: 900px;
+    position: relative;
 }
 
+header img {
+    width: 150px;
+    float: right;
+    margin:20px 20px;
+    border-radius: 10px;
+
+
+
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #6B7A8F;
+    color: white;
+    font-size: 1rem;
+}
+main {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px;
+    padding-left: 20px;
+}
 
 /* unvisited link */
 
 a:link {
-    color: chocolate;
+    color: #F7882F;
+    ;
 }
 
 
 /* visited link */
 
 a:visited {
-    color: blueviolet;
+    color: #6B7A8F;
 }
 
 
 /* mouse over link */
 
 a:hover {
-    color: #FF00FF;
+    color: #f7c331;
 }
 
 
 /* selected link */
 
 a:active {
-    color: chocolate;
+    color: #F7882F;
 }
 
 h1 {
     font-size: 2rem;
-    color: #fff;
+    color: white;
+    padding: 20px;
+
 }
 
 h2 {
     font-size: 1.5rem;
     text-align: left;
-    color: chocolate;
-    padding: 1em;
+    color: #F7882F;
     font-family: Lora;
 }
 
+nav {
+    color: #DCC7AA;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+ul li {
+    color: black;
+}
+
 ul li a {
-    color: chocolate;
-}
-
-header,
-footer {
-    margin: 2rem auto;
-    padding: .3rem;
-    max-width: 1300px;
-    text-align: center;
-    background-color: dimgray;
-    color: #fff;
-}
-
-main {
-    margin: 2rem auto;
-    min-height: calc(100vh - 70px);
-    max-width: 1300px;
-}
-
-header img {
-    width: 200px;
-    float: right;
-    margin-top: 1em;
-    border-radius: 8px;
+    color: black;
 }
 
 footer {
     font-size: 1rem;
-    text-align: left;
-    padding: 1em, 1em;
-    height: 50px;
+    text-align: center;
+    background-color: #6B7A8F;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer a {
