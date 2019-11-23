@@ -1,6 +1,6 @@
 // This shows my understanding of functions,variables, parameters, and conditional statements
 function computeBMI() {
-    // User input variables
+    // Select the Elements
     var height = Number(document.getElementById("height").value);
     var heightunits = document.getElementById("heightunits").value;
     var weight = Number(document.getElementById("weight").value);
@@ -34,7 +34,3 @@ function computeBMI() {
         document.getElementById("response").innerText = "Obese";
     }
 }
-
-//This shows my understanding of Arrays
-let item = [];
-document.getElementById("wishItem").innerHTML = item;
