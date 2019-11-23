@@ -1,0 +1,237 @@
+html {
+    background-color: #FFF;
+    background-size: cover;
+}
+
+body {
+    height: 100%;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: Lato;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 3rem auto;
+    padding-left: 20px;
+    max-width: 50%;
+    min-height: calc(100vh - 70px);
+}
+
+
+/*Main*/
+
+main {
+    margin-top: 30px;
+    padding-right: 20px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    color: rgb(160, 16, 16);
+    font-size: 24px;
+}
+
+h3 {
+    color: rgb(18, 136, 55);
+}
+
+.appContent ul {
+    color: rgb(18, 136, 55);
+}
+
+
+/* Container Section */
+
+.container {
+    padding: 40px;
+    width: 380px;
+    margin: 0 auto;
+}
+
+
+/*Header*/
+
+header {
+    margin-left: -20px;
+    padding: .5rem;
+    text-align: center;
+    background-color: rgb(18, 136, 55);
+    color: white;
+    height: 45px;
+}
+
+.top {
+    width: 380px;
+    height: 200px;
+    background-image: url("/img/wishListBanner1.png");
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+.clear {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.clear i {
+    font-size: 30px;
+    color: rgb(18, 136, 55);
+}
+
+.clear i:hover {
+    cursor: pointer;
+    text-shadow: 1px 3px 5px rgb(18, 136, 55);
+    transform: rotate(45deg);
+}
+
+#date {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: rgb(160, 16, 16);
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+/* Content */
+
+.content {
+    width: 380px;
+    height: 350px;
+    max-height: 350px;
+    background-color: rgb(18, 136, 55);
+    overflow: auto;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    width: 380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 2px solid rgb(18, 136, 55);
+    ;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(18, 136, 55);
+}
+
+.item i.far.fa-circle {
+    position: absolute;
+    font-size: 25px;
+    padding-left: 5px;
+    left: 15px;
+    top: 10px;
+    color: #fff;
+}
+
+.item i.far.fa-circle {
+    cursor: pointer;
+}
+
+.far.fa-check-circle {
+    color: #fff;
+    position: absolute;
+    font-size: 25px;
+    padding-left: 5px;
+    left: 15px;
+    top: 10px;
+}
+
+.item p.text {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    left: 50px;
+    top: 5px;
+    color: rgb(243, 235, 235);
+    background-color: transparent;
+    max-width: 285px;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color: rgb(182, 34, 34);
+}
+
+.item i.fas {
+    position: absolute;
+    font-size: 25px;
+    right: 15px;
+    top: 10px;
+    color: #fff;
+}
+
+.item i.fas:hover {
+    color: #111111;
+    cursor: pointer;
+}
+
+
+/* Add Item */
+
+.add-new-item {
+    position: relative;
+    width: 380px;
+    height: 40px;
+    background-color: #FFF;
+    padding: 10px;
+    border-top: 1px solid rgba(228, 43, 43, 0.63);
+}
+
+.add-new-item i {
+    position: absolute;
+    font-size: 35px;
+    color: rgb(226, 33, 33);
+}
+
+.add-new-item input {
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.add-new-item input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #000;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+
+/*Footer*/
+
+footer {
+    font-size: 1rem;
+    text-align: left;
+    height: 40px;
+    background-color: rgb(18, 136, 55);
+    color: white;
+    margin-left: -20px;
+    padding: 0px 0px 10px 15px;
+}
+
+footer a {
+    color: white;
+}
