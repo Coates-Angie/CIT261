@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <title>Code Topics Fluency</title>
+    <script src="scripts/basics.js"></script>
+    <link rel="stylesheet" href="styles/basics.css">
+</head>
+
+<body>
+    <header>
+        <h1>CIT 261 Code Fluency for Angie Coates</h1>
+    </header>
+    <main>
+        <section id="function1">
+            <h2>Function, Conditional Statements & Variables</h2>
+            <h3>Body Mass Index Calculator</h3>
+            <p>Enter your height: <input type="text" id="height" />
+                <select type="multiple" id="heightunits">
+                <option value="inches"  selected="selected">Inches</option>
+                <option value="meters">Meters</option>
+            </select> </p>
+            <p>Enter your weight: <input type="text" id="weight" />
+                <select type="multiple" id="weightunits">
+                <option value="lb" selected="selected">Pounds</option>
+                <option value="kg">Kilograms</option>
+            </select> </p>
+            <input type="submit" id="computeBtn" value="Compute" onclick="computeBMI();">
+            <h3>Your BMI is: <span id="bmiOutput"></span></h3>
+            <h4>This means you are: <span id="response"></span></h4>
+        </section>
+    </main>
+</body>
+<footer>
+    <p>&#169; 2019- Angie Coates- Utah - <a href="http://www.byui.edu/online">BYU-Idaho</a></p>
+</footer>
+
+</html>
