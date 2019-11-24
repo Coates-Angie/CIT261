@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing, Defining, and Triggering CSS3 Transitions, Transforms, & Animation without Custom Libraries</title>
+    <link rel="stylesheet" href="styles/csstta.css">
+</head>
+
+<body>
+    <header>
+        <h1> CIT 261 Code Fluency for Angie Coates</h1>
+    </header>
+    <main>
+        <h2>Designing, Defining, and Triggering CSS3 Transitions, Transforms, and Animations without Custom Libraries</h2>
+        <h3>Transform:</h3>
+        <p>Hover over the star to see it rotate 360 degrees and grow!</p>
+        <h3>Transition:</h3>
+        <p>This transition with happen on the transformation of the star on hover over 1 second </p>
+        <h3>Animations:</h3>
+        <p>Watch Santa and his sleigh fly right out of town!</p>
+        <h3>Animations Triggered with JavaScript:</h3>
+        <p>Click on the elf and he will slide in the snow</p>
+        <div class="christmasScene">
+            <img id="winterBackground" src="img/winterBackground.jpg">
+            <img id="christmasTree" src="img/ChristmasTree2.png">
+            <img id="cStar" src="img/christmas-star.png">
+            <img id="santa" src="img/wavingSanta.png">
+        </div>
+        <div class="elfContainer">
+            <div id="elf">
+                <img src="img/elf1.png">
+            </div>
+        </div>
+    </main>
+    <script>
+        elf.addEventListener("click", function() {
+            elf.style.animation = "elfGo 1s linear forwards";
+        });
+    </script>
+</body>
+<footer>
+    <p>&#169; 2019- Angie Coates- Utah - <a href="http://www.byui.edu/online">BYU-Idaho</a></p>
+</footer>
+
+</html>
