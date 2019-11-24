@@ -64,7 +64,6 @@ header {
 .top {
     width: 380px;
     height: 200px;
-    background-image: url("/img/wishListBanner1.png");
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
     position: relative;
