@@ -35,28 +35,27 @@ function computeBMI() {
     }
 }
 
-//This is the AJAX section
+//XMLHttpRequest
+const xhr = new XMLHttpRequest();
 
-// Our JSON data
-function listBoys() {
-    var data = {
-        "myBoys": [{
-                "childName": "Porter Coates",
-                "born": "2002"
-            },
-            {
-                "childName": "Lukas Coates",
-                "born": "2004"
-            },
-            {
-                "childName": "Dane Coates",
-                "born": "2011"
-            }
-        ]
+xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4) {
+        if (xhr.status == 200) {
+            var mySonsList = JSON.parse(xhr.responseText);
+            listBoys(mySonsList);
+        }
+
+        if (xhr.status == 404) {
+            console.log('File cannot be found!');
+        }
     }
+};
+xhr.open('get', 'kids.txt', true);
+xhr.send();
 
+function listBoys(data) {
     // Put the data into a variable and format with HTML tags
-    var output = "<h1>My Boys</h1>";
+    var output = "<h3>My Boys</h3>";
     output += "<ul>";
 
     // Loop through the Boys
@@ -69,6 +68,3 @@ function listBoys() {
     // Output the data to the "sonsList" element
     document.getElementById("sonsList").innerHTML = output;
 }
-
-// Load the above function when the window loads
-window.onload = listBoys;
