@@ -1,0 +1,336 @@
+html {
+    background-color: rgba(0, 0, 0, 0.1);
+    background-size: cover;
+}
+
+body {
+    height: 100%;
+    font-size: 18px;
+    font-family: Lato;
+    background-color: white;
+    margin: 3rem auto;
+    max-width: 50%;
+    position: relative;
+}
+
+
+/*main*/
+
+main {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+h1 {
+    padding: 20px;
+}
+
+h2 {
+    color: green;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+h3 {
+    color: green;
+}
+
+p {
+    color: rgb(207, 29, 29);
+    font-size: 18px;
+}
+
+.appContent ul {
+    color: rgb(18, 136, 55);
+}
+
+.christmasScene {
+    position: relative;
+    height: 800px;
+    width: 100%;
+}
+
+#winterBackground {
+    height: 800px;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* Container Section */
+
+.container {
+    position: absolute;
+    bottom: 125px;
+    left: 250px;
+    padding: 40px;
+    width: 380px;
+    margin: 0 auto;
+}
+
+
+/*Header*/
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: white;
+    font-size: 1rem;
+    line-height: 10px;
+}
+
+.top {
+    width: 380px;
+    height: 200px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.clear {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.clear i {
+    font-size: 30px;
+    color: #000;
+}
+
+.clear i:hover {
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+
+#date {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: #007d00;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+/* Content */
+
+.appContent {
+    width: 380px;
+    height: 300px;
+    max-height: 300px;
+    background-color: #000;
+    overflow: auto;
+}
+
+.appContent::-webkit-scrollbar {
+    display: none;
+}
+
+.appContent ul {
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    width: 380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+}
+
+.item i.far.fa-circle {
+    position: absolute;
+    font-size: 25px;
+    padding-left: 5px;
+    left: 15px;
+    top: 10px;
+    color: #fff;
+}
+
+.item i.far.fa-circle {
+    cursor: pointer;
+}
+
+.far.fa-check-circle {
+    color: #fff;
+    position: absolute;
+    font-size: 25px;
+    padding-left: 5px;
+    left: 15px;
+    top: 10px;
+}
+
+
+/*Santa will be used to show how to animate without custom libraries*/
+
+#santa {
+    animation: fly 6s linear 1s 3 forwards;
+    position: absolute;
+    bottom: 400px;
+    left: -1200px;
+}
+
+@keyframes fly {
+    0% {
+        bottom: 400px;
+        left: -400px;
+    }
+    50% {
+        bottom: 600px;
+        left: 400px;
+    }
+    100% {
+        bottom: 500px;
+        left: 1800px;
+    }
+}
+
+
+/*Elf Section*/
+
+.elfContainer {
+    position: relative;
+}
+
+#elf {
+    position: absolute;
+    bottom: -55px;
+    padding-bottom: 5px;
+    left: 20px;
+}
+
+@keyframes elfGo {
+    from {
+        left: 20px;
+    }
+    to {
+        left: 800px;
+    }
+}
+
+.item p.text {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    left: 50px;
+    top: 5px;
+    color: rgb(243, 235, 235);
+    background-color: transparent;
+    max-width: 285px;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color: rgb(182, 34, 34);
+}
+
+.item i.fas {
+    position: absolute;
+    font-size: 25px;
+    right: 15px;
+    top: 10px;
+    color: #fff;
+}
+
+.item i.fas:hover {
+    color: #e82728;
+    cursor: pointer;
+}
+
+
+/* Add Item */
+
+.add-new-item {
+    position: relative;
+    width: 380px;
+    height: 40px;
+    background-color: #FFF;
+    padding: 10px;
+    border-top: 1px solid #ac1c1c;
+}
+
+.add-new-item i {
+    position: absolute;
+    font-size: 35px;
+    color: #ac1c1c;
+}
+
+.add-new-item input {
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.add-new-item input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #000;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+
+/*Ajax*/
+
+.Ajax {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/*Footer*/
+
+footer {
+    font-size: 1rem;
+    text-align: left;
+    background-color: #000;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #ac1c1c;
+}
+
+footer p {
+    padding-left: 20px;
+    color: white;
+    align-content: center;
+}
+
+
+/*Audio Player*/
+
+audio {
+    position: relative;
+    background-color: #ac1c1c;
+    padding: 5px;
+    width: 250px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 15px;
+    right: 5px;
+    bottom: 10px;
+    float: right;
+}
